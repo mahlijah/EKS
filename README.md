@@ -1,5 +1,7 @@
 **PHP Application with a Redis Backend**
+    
     To Deploy to an already created K8s cluster: 
+    
     #create the redis master deployment
     kubectl create -f redis-master.yaml
     #create the redis master svc
