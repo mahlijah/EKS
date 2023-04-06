@@ -6,3 +6,11 @@ eksctl create cluster \
 --nodegroup-name linux-nodes \
 --node-type t2.micro \
 --managed
+
+
+#connect to the cluster just created
+eksctl utils write-kubeconfig --cluster=k21ekscluster-ebs
+
+
+#delete cluster
+#eksctl delete cluster --name k21ekscluster 
