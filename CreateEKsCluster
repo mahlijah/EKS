@@ -1,0 +1,8 @@
+#create a new EKS Cluster via CLI eksctl
+eksctl create cluster \
+--name k21ekscluster-csi \
+--version 1.25 \
+--region us-east-1 \
+--nodegroup-name linux-nodes \
+--node-type t2.micro \
+--managed
